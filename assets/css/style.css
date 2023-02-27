@@ -1,182 +1,256 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 header {
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 nav ul {
-	list-style: none;
-	display: flex;
+    list-style: none;
+    display: flex;
 }
 
 nav ul li {
-	margin-right: 20px;
+    margin-right: 20px;
 }
 
 nav ul li a {
-	color: #fff;
-	text-decoration: none;
-	font-weight: bold;
-	transition: all 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-	color: #ccc;
+    color: #ccc;
 }
 
 section {
-	padding: 50px;
+    padding: 50px;
     margin-top: 50px;
 }
 
 section h2 {
-	font-size: 2em;
-	margin-bottom: 30px;
+    font-size: 2em;
+    margin-bottom: 30px;
 }
 
 .trabalho {
-	margin-bottom: 50px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .trabalho img {
-	width: 100%;
-	max-width: 400px;
-	height: auto;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 .trabalho h3 {
-	margin-top: 20px;
-	font-size: 1.5em;
+    margin-top: 20px;
+    font-size: 1.5em;
 }
 
 .trabalho p {
-	margin-top: 10px;
-	font-size: 1em;
+    margin-top: 10px;
+    font-size: 1em;
 }
 
 form label {
-	display: block;
-	margin-bottom: 5px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 form input,
 form textarea {
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 10px;
-	border: 2px solid #ccc;
-	border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
 }
 
 form input[type="submit"] {
-	background-color: #333;
-	color: #fff;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 5px;
-	cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-@media only screen and (max-width: 375px) { /* iPhone 14 */
-	header {
-		padding: 10px;
-	}
-	
-	nav ul li {
-		margin-right: 10px;
-	}
-	
-	section {
-		padding: 30px;
-	}
-	
-	.trabalho img {
-		max-width: 300px;
-	}
-	
-	.trabalho h3 {
-		font-size: 1.2em;
-	}
-	
-	.trabalho p {
-		font-size: 0.9em;
-	}
-	
-	form input,
-	form textarea {
-		padding: 5px;
-		font-size: 0.9em;
-	}
-	
-	form input[type="submit"] {
-		padding: 5px 10px;
-		font-size: 0.9em;
-	}
+@media only screen and (max-width: 375px) {
+
+    /* iPhone 14 */
+    header {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    .trabalho img {
+        max-width: 300px;
+    }
+
+    .trabalho h3 {
+        font-size: 1.2em;
+    }
+
+    .trabalho p {
+        font-size: 0.9em;
+    }
+
+    form input,
+    form textarea {
+        padding: 5px;
+        font-size: 0.9em;
+    }
+
+    form input[type="submit"] {
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
 
     .img-construct {
         max-width: 280px;
-      }
+    }
 }
 
-@media only screen and (max-width: 360px) { /* Samsung Galaxy S20 */
-	header {
-		padding: 10px;
-	}
-	
-	nav ul li {
-		margin-right: 10px;
-	}
-	
-	section {
-		padding: 20px;
-	}
-	
-	.trabalho img {
-		max-width: 280px;
-	}
-	
-	.trabalho h3 {
-		font-size: 1.1em;
-	}
-	
-	.trabalho p {
-		font-size: 0.8em;
-	}
-	
-	form input,
-	form textarea {
-		padding: 5px;
-		font-size: 0.8em;
-	}
+@media only screen and (max-width: 360px) {
+
+    /* Samsung Galaxy S20 */
+    header {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .trabalho img {
+        max-width: 280px;
+    }
+
+    .trabalho h3 {
+        font-size: 1.1em;
+    }
+
+    .trabalho p {
+        font-size: 0.8em;
+    }
+
+    form input,
+    form textarea {
+        padding: 5px;
+        font-size: 0.8em;
+    }
 
     .img-construct {
         max-width: 280px;
-      }
+    }
 }
 
 .img-construct {
     display: block;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos para telas de até 768px de largura (celulares) */
+
+  /* Esconde o menu principal */
+  nav {
+    display: none;
   }
-  
-  
+
+  /* Estilos para o botão de menu */
+  .menu-btn {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+
+  .menu-btn span {
+    display: block;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 4px;
+  }
+
+  /* Estilos para o menu lateral */
+  header {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #f5f5f5;
+    z-index: 9998;
+    transition: all 0.3s ease-in-out;
+  }
+
+  header.show {
+    left: 0;
+  }
+
+  header nav {
+    display: block;
+    padding: 20px;
+  }
+
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav ul li {
+    margin-bottom: 10px;
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 5px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  header nav ul li a:hover {
+    background-color: #ddd;
+  }
+}
