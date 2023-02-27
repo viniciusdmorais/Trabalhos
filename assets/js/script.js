@@ -11,5 +11,5 @@ function substituirImagem() {
       });
     }
   }
-  substituirImagem()
+  substituirImagem() 
   //substituirImagem()
